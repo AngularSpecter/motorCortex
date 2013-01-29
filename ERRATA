@@ -1,0 +1,5 @@
+MotorCortex Errata
+
+Version 1.1
+         N1IN1 (motot 1, channel 1 pwm) assigned to TA0.0, preventing pwm
+         modulation using mode7.  This limits PWM frequency to full clock
