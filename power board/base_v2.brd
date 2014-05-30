@@ -34,18 +34,18 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1452,13 +1452,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="39.2049" y1="16.957675" x2="39.360475" y2="16.8021" width="0.254" layer="1"/>
 <wire x1="39.360475" y1="16.8021" x2="39.360475" y2="15.2175" width="0.254" layer="1"/>
 <wire x1="39.360475" y1="15.2175" x2="39.51605" y2="15.061925" width="0.254" layer="1"/>
-<contactref element="U1" pad="11"/>
-<contactref element="U1" pad="11"/>
-<contactref element="U1" pad="15"/>
-<contactref element="U1" pad="14"/>
 <contactref element="C11" pad="2"/>
 <contactref element="U1" pad="4"/>
-<contactref element="X1" pad="2"/>
 <contactref element="R12" pad="2"/>
 <contactref element="C13" pad="2"/>
 <contactref element="U$6" pad="2"/>
@@ -1500,8 +1495,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="5V_POWER" pad="C"/>
 <wire x1="14.9352" y1="20.691475" x2="15.090775" y2="20.691475" width="0.254" layer="1"/>
 <wire x1="15.090775" y1="20.691475" x2="16.633825" y2="20.691475" width="0.254" layer="1"/>
-<wire x1="16.633825" y1="20.691475" x2="16.665575" y2="20.723225" width="0.254" layer="1"/>
-<wire x1="16.665575" y1="21.383625" x2="15.3162" y2="21.383625" width="0.254" layer="1"/>
 <wire x1="15.3162" y1="21.383625" x2="15.090775" y2="21.1582" width="0.254" layer="1"/>
 <wire x1="11.026775" y1="20.088225" x2="11.84275" y2="20.088225" width="0.254" layer="1"/>
 <wire x1="11.84275" y1="20.088225" x2="12.13485" y2="20.380325" width="0.254" layer="1"/>
@@ -1542,7 +1535,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="16.02405" y1="20.380325" x2="14.62405" y2="20.380325" width="0.254" layer="16"/>
 <wire x1="13.991734375" y1="9.81281875" x2="12.53826875" y2="9.81281875" width="0.254" layer="16"/>
 <wire x1="12.53826875" y1="9.81281875" x2="11.751490625" y2="10.599596875" width="0.254" layer="16"/>
-<wire x1="16.665575" y1="18.792825" x2="18.01495" y2="18.792825" width="0.254" layer="1"/>
 <wire x1="18.01495" y1="18.792825" x2="18.202275" y2="18.669" width="0.254" layer="1"/>
 <via x="18.202275" y="18.669" extent="1-16" drill="0.3556"/>
 <wire x1="18.202275" y1="18.669" x2="18.202275" y2="19.758025" width="0.254" layer="16"/>
@@ -1656,6 +1648,11 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="44.8056" y="22.558375"/>
 <vertex x="37.182425" y="22.558375"/>
 </polygon>
+<contactref element="U1" pad="11"/>
+<contactref element="U1" pad="11"/>
+<contactref element="U1" pad="15"/>
+<contactref element="U1" pad="14"/>
+<contactref element="X1" pad="2"/>
 </signal>
 <signal name="VCORE">
 <contactref element="C2" pad="1"/>
